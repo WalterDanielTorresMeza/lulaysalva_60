@@ -14,6 +14,7 @@ const FinalMessage = () => {
       <h2 className="final-title"> </h2>
       <p className="final-text">
         "Gracias por formar parte de nuestra historia de vida."<br/>
+         Los esperamos <br/>
          Con cariño, Lula y Salva
       </p>
 
