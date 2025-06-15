@@ -8,12 +8,10 @@
   /* Fondo animado suave: tonos salmón claro a marfil */
   background: linear-gradient(135deg, #ffffff49, #ffffff49, #ffffff49);
   background-size: 100% 100%;
-
   animation: gradientSlide 1s ease infinite;
   text-align: center;
   padding: 2rem 1rem 2rem;
   font-family: 'Courgette', cursive;
-  font-size: 5rem;
 
 }
 
@@ -33,15 +31,13 @@
 .header-title {
   display: inline-block;
   margin: 0;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
   /* Texto con degradado: dorado a burdeos */
   background: linear-gradient(90deg, #a59e5e, #a59e5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
-
-  
 }
 
 .header-subtitle {
