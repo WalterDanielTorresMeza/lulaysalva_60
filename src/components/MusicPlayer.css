@@ -1,0 +1,19 @@
+/* src/components/MusicPlayer/MusicPlayer.css */
+.music-player {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.music-button {
+  width: 100px;      /* ancho del icono */
+  height: 100px;     /* altura igual para mantener proporción */
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.music-button:hover {
+  transform: scale(1.1);
+}
