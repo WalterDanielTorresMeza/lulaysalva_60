@@ -7,8 +7,8 @@
 }
 
 .music-button {
-  width: 100px;      /* ancho del icono */
-  height: 100px;     /* altura igual para mantener proporción */
+  width: 70px;      /* ancho del icono */
+  height: 70px;     /* altura igual para mantener proporción */
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s;
