@@ -1,0 +1,68 @@
+/* Importa la fuente Courgette */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.header {
+
+  position: relative;
+  overflow: hidden;
+  /* Fondo animado suave: tonos salmón claro a marfil */
+  background: linear-gradient(135deg, #ffffff49, #ffffff49, #ffffff49);
+  background-size: 100% 100%;
+
+  animation: gradientSlide 1s ease infinite;
+  text-align: center;
+  padding: 2rem 1rem 2rem;
+  font-family: 'Courgette', cursive;
+
+
+}
+
+@keyframes gradientSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInSlideDown 1s ease-out both;
+        
+}
+
+.header-title {
+  display: inline-block;
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  /* Texto con degradado: dorado a burdeos */
+  background: linear-gradient(90deg, #a59e5e, #a59e5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+
+  
+}
+
+.header-subtitle {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #333333;
+}
+
+@keyframes fadeInSlideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .header-title { font-size: 2.5rem; }
+  .header-subtitle { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .header { padding: 3rem 1rem 1.5rem; }
+  .header-title { font-size: 2rem; }
+  .header-subtitle { font-size: 1rem; }
+}

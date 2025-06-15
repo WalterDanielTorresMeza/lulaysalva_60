@@ -1,0 +1,33 @@
+/* Reset ligero y fondo global */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Mueve tu 14.svg a public/img/14.svg */
+  background-image: url('./img/ft.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff; /* respaldo */
+}
+
+/* Asegura que la App montada crezca con el contenido */
+#root, .App {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Otros estilos globales */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

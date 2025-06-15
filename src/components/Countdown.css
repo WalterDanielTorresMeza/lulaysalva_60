@@ -1,0 +1,71 @@
+/* Importa la misma fuente Courgette para consistencia */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.countdown {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  font-family: 'Courgette', cursive;
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.countdown-title {
+  margin: 0 0 1rem;
+  /* Escala fluida entre 1.8rem y 2.5rem */
+  font-size: clamp(5rem, 5vw, 2.5rem);
+  color: #a59e5e;
+  animation: fadeIn 1s ease;
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeIn 1.5s ease;
+  
+
+
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-value {
+  /* Escala fluida entre 2rem y 3rem */
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  color: #464646;
+}
+
+.countdown-label {
+  margin-top: 0.25rem;
+  /* Escala fluida entre 0.8rem y 1rem */
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .countdown { padding: 1.5rem 0.5rem; }
+  .countdown-box { gap: 1rem; }
+}
