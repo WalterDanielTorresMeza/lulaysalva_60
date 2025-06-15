@@ -13,7 +13,7 @@
 }
 
 .schedule-header {
-  font-size: clamp(4rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
   color: #a59e5e;
   margin-bottom: 1.5rem;
 
