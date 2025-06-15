@@ -9,6 +9,7 @@ import PhotoCarousel from './components/PhotoCarousel';
 import EventLocation from './components/EventLocation'
 import FinalMessage from './components/FinalMessage';
 import EventSchedule from './components/EventSchedule';
+import MusicPlayer from './components/MusicPlayer';
 
 import './App.css';
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <div data-aos="fade-down">
       <Header />
       </div>
-
+<MusicPlayer />
 <div className="separator-tile" />
         
       <Countdown targetDate={new Date('2025-07-26T00:00:00')} />
