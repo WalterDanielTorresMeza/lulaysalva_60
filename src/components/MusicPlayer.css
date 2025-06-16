@@ -1,16 +1,15 @@
-/* src/components/MusicPlayer/MusicPlayer.css */
+/* Dejamos la música en flujo, no fija */
 .music-player {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 1000;
+  position: relative;        /* ya no es fixed */
+  margin: 1rem auto;         /* separa del header */
+  display: flex;
+  justify-content: center;   /* centra el botón */
 }
 
 .music-button {
-  width: 70px;      /* ancho del icono */
-  height: 70px;     /* altura igual para mantener proporción */
+  width: 48px;
+  height: 48px;
   cursor: pointer;
-  user-select: none;
   transition: transform 0.2s;
 }
 
