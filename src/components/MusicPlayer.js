@@ -35,7 +35,7 @@ const MusicPlayer = () => {
       />
       <img
         ref={btnRef}
-        src={playing ? '/r1.png' : '/r2.png'}
+        src={playing ? './src/img/r1.png' : './src/img/r1.png'}
         alt={playing ? 'Pausa' : 'Reproducir'}
         className="music-button"
         onClick={togglePlay}
