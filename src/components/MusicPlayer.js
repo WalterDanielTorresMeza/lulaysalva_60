@@ -29,7 +29,7 @@ const MusicPlayer = () => {
     <div className="music-player">
       <audio
         ref={audioRef}
-        src="/sou.mp3"  /* tu mp3 en public/audio/music.mp3 */
+        src="/a.mp3"  /* tu mp3 en public/audio/music.mp3 */
         loop
       />
       <img
