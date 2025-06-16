@@ -1,26 +1,41 @@
 // src/components/MusicPlayer/MusicPlayer.js
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './MusicPlayer.css';
 
 const MusicPlayer = () => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  // Al montar, carga pero no reproduce
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = 0.5;
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // Descomenta si quieres empezar en silencio y luego subir volumen:
+    // audio.volume = 0;  
+    const playPromise = audio.play();    // intenta reproducir
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          // Éxito: el audio está sonando
+          setPlaying(true);
+          // Si lo iniciaste en silencio, aquí podrías subir el volumen gradualmente:
+          // audio.volume = 0.5;
+        })
+        .catch((error) => {
+          // Si el navegador bloquea el autoplay, lo capturamos (policy)
+          console.warn('Autoplay bloqueado, espera interacción del usuario.', error);
+        });
     }
   }, []);
 
   const togglePlay = () => {
-    if (!audioRef.current) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+
     if (playing) {
-      audioRef.current.pause();
+      audio.pause();
     } else {
-      audioRef.current.play().catch(() => {
-        /* en algunos móviles requiere interacción */
-      });
+      audio.play();
     }
     setPlaying(!playing);
   };
@@ -29,8 +44,9 @@ const MusicPlayer = () => {
     <div className="music-player">
       <audio
         ref={audioRef}
-        src="/a.mp3"  /* tu mp3 en public/audio/music.mp3 */
+        src="/a.mp3"  /* asegúrate de tener public/audio/music.mp3 */
         loop
+        // autoPlay  // también puedes dejar el atributo para navegadores compatibles
       />
       <img
         src={playing ? '/2.png' : '/1.png'}
