@@ -1,0 +1,25 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  /* Quita position: fixed y bottom/left */
+  position: relative;
+  width: 100%;
+  margin: 0rem 0 0;         /* un poco de margen arriba */
+  padding: 0rem 0rem;     /* menos padding para hacerlo más delgado */
+  background: rgba(255, 255, 255, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;              /* menos espacio entre logo y texto */
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0);
+}
+
+.footer-logo {
+  height: 20px;             /* logo un poco más pequeño */
+  width: 100px;
+}
+
+.footer-text {
+  font-size: 0.7rem;      /* texto más compacto */
+  margin: 0;
+  color: #414141;
+}
