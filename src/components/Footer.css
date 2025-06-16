@@ -14,12 +14,12 @@
 }
 
 .footer-logo {
-  height: 20px;             /* logo un poco más pequeño */
+  height: 18px;             /* logo un poco más pequeño */
   width: 100px;
 }
 
 .footer-text {
-  font-size: 0.7rem;      /* texto más compacto */
+  font-size: 0.6rem;      /* texto más compacto */
   margin: 0;
   color: #414141;
 }
