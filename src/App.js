@@ -10,6 +10,7 @@ import EventLocation from './components/EventLocation'
 import FinalMessage from './components/FinalMessage';
 import EventSchedule from './components/EventSchedule';
 import MusicPlayer from './components/MusicPlayer';
+import Footer from './components/Footer';
 
 import './App.css';
 function App() {
@@ -52,7 +53,7 @@ function App() {
 <div data-aos="fade-up">
   <FinalMessage />
 </div>
-
+<Footer />
 </div>
   );
 }
