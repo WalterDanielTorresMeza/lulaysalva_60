@@ -25,7 +25,9 @@ function App() {
       <div data-aos="fade-down">
       <Header />
       </div>
-<MusicPlayer />
+      <div data-aos="fade-down" className="music-player-container">
+        <MusicPlayer />
+      </div>
 <div className="separator-tile" />
         
       <Countdown targetDate={new Date('2025-07-26T00:00:00')} />
