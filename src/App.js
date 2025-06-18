@@ -32,7 +32,7 @@ function App() {
         
       <Countdown targetDate={new Date('2025-07-26T00:00:00')} />
         <div className="desliza-hint">
-  <img src="./img/desliza.gif" alt="Desliza hacia abajo" />
+  <img src="../img/desliza.gif" alt="Desliza hacia abajo" />
 </div>
 
 <div className="separator-tile" />
