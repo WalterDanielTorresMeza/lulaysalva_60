@@ -27,6 +27,14 @@
   animation: fadeIn 1s ease;
 }
 
+.countdown-titlefalta {
+  margin: 0 0 1rem;
+  /* Escala fluida entre 1.8rem y 2.5rem */
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: #464646;
+  animation: fadeIn 1s ease;
+}
+
 .countdown-box {
   display: flex;
   justify-content: center;
