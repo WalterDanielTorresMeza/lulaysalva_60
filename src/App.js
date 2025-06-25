@@ -30,16 +30,18 @@ function App() {
       </div>
 <div className="separator-tile" />
         
-      <Countdown targetDate={new Date('2025-07-26T00:00:00')} />
+
+        <div data-aos="zoom-in">
+      <PhotoCarousel images={images} />
+      </div>
+  
         <div className="desliza-hint">
   <img src="/desliza.gif" alt="Desliza hacia abajo" />
 </div>
 
 <div className="separator-tile" />
 
-      <div data-aos="zoom-in">
-      <PhotoCarousel images={images} />
-      </div>
+      <Countdown targetDate={new Date('2025-07-26T00:00:00')} />
 
 <div className="separator-tile" />
 
