@@ -36,7 +36,7 @@ const Countdown = ({ targetDate }) => {
   return (
     <section className="countdown">
     <h2 className="countdown-title">Sabado 26 de Julio 2025</h2>
-      <h2 className="countdown-title">Faltan</h2>
+      <h2 className="countdown-titlefalta">Faltan</h2>
       <div className="countdown-box">
         {Object.entries(timeLeft).map(([interval, value]) => (
           <div key={interval} className="countdown-item">
