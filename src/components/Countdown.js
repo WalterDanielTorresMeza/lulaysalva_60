@@ -35,7 +35,7 @@ const Countdown = ({ targetDate }) => {
   // Mientras no sea el día, muestra el contador regresivo
   return (
     <section className="countdown">
-    <h2 className="countdown-title">Sabado 26 de Julio 2025</h2>
+    <h2 className="countdown-title">Sábado 26 de Julio 2025</h2>
       <h2 className="countdown-titlefalta">Faltan</h2>
       <div className="countdown-box">
         {Object.entries(timeLeft).map(([interval, value]) => (
