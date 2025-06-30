@@ -51,7 +51,11 @@ function App() {
       </div>
 
 <div className="separator-tile" />
-
+      <div data-aos="fade-up">
+      <EventLocationI />
+      </div>
+  
+<div className="separator-tile" />
       <div data-aos="fade-up">
       <EventSchedule />
       </div>
