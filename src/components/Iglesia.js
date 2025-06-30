@@ -13,13 +13,6 @@ const EventLocationI = () => {
     <section className="event-location" data-aos="fade-up">
       <h2 className="location-title">Misa</h2>
       {/* Imagen del lugar */}
-      <div className="location-image-container">
-        <img
-          src="/ig.jpg"
-          alt="Parroquia San Antonio de Padua"
-          className="location-image"
-        />
-      </div>
       <p className="location-address">
         Parroquia San Antonio de Padua<br />
         Av San Antonio 70, Zona Centro, 98100 Morelos, Zacatecas <br />
