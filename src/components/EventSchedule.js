@@ -5,6 +5,12 @@ import './EventSchedule.css';
 
 const events = [
   {
+    time: '3:15PM',
+    title: 'Misa',
+    details:
+      ' '
+  },
+  {
     time: '4:30 - 5:00 PM',
     title: 'Recepción',
     details:
