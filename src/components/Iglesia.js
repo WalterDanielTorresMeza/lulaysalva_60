@@ -23,7 +23,6 @@ const EventLocationI = () => {
       <p className="location-address">
         Parroquia San Antonio de Padua<br />
         Av San Antonio 70, Zona Centro, 98100 Morelos, Zacatecas <br />
-        26 de Julio de 2025
       </p>
       {/* Botón para abrir Google Maps */}
       <div className="location-button-container">
