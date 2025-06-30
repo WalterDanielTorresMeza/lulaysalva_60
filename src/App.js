@@ -11,6 +11,7 @@ import FinalMessage from './components/FinalMessage';
 import EventSchedule from './components/EventSchedule';
 import MusicPlayer from './components/MusicPlayer';
 import Footer from './components/Footer';
+import EventLocationI from './components/Iglesia';
 
 import './App.css';
 function App() {
