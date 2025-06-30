@@ -15,7 +15,7 @@ const EventLocationI = () => {
       {/* Imagen del lugar */}
       <div className="location-image-container">
         <img
-          src="/quinta.jpg"
+          src="/ig.jpg"
           alt="Parroquia San Antonio de Padua"
           className="location-image"
         />
